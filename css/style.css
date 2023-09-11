@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main color */
+/* $color1 = #06060D */
+/* $color2 = #3DD9AD */
+
+/* Gradien 1 */
+/* $color3 = #4992F2 */
+/* $color4 = #49F2A3 */
+
+/* Gradien 2 */
+/* $color3 = #4992F2 */
+/* $color5 = ##5E66F2 */
+
+body {
+  background-color: #06060d;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 30px #021e37;
+  background-color: #06060d;
+  z-index: 30;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+}
+
+.nav_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid transparent;
+}
+
+.nav_item a:hover {
+  border-bottom: 3px solid white;
+  transition: all ease-in-out 300ms;
+}
+
+/* Main Component style */
+
+main {
+  margin-top: 3rem;
+}
+
+/* Hero section */
+
+#hero {
+  background-color: #011526;
+  margin: 0 !important;
+}
+
+#hero svg {
+  translate: 0 10px;
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  color: white;
+  font-size: smaller;
+}
+
+#hero-title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(to right, #5e66f2, #4992f2, #49f2a3);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 1rem 0;
+}
+.hero-img img {
+  position: absolute;
+  top: 60px;
+  object-fit: cover;
+  z-index: 20;
+}
+
+.shape {
+  z-index: 1;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 50%;
+  background-color: #5e66f2;
+  opacity: 10%;
+}
+
+/* Save book */
+section {
+  margin: 1rem 6rem;
+}
+
+#saveBook {
+  color: #4992f2;
+}
+
+#saveBook h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 4rem 0;
+}
+
+#inputBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  margin: 1rem 0;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.input label {
+  font-weight: 600;
+}
+
+.input input {
+  width: 70%;
+  color: #4992f2;
+  background-color: #021e37;
+  border: 1px solid #4992f2;
+  border-radius: 10px;
+}
+
+.input_inline {
+  margin: 1rem 24.5vw;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#inputBook button {
+  padding: 0.5rem 0.5rem;
+  width: 20vw;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #5e66f2;
+}
+
+#inputBook button:hover {
+  background-color: #4992f2;
+  border: 2px solid #5e66f2;
+}
+
+/* Search section */
