@@ -90,6 +90,7 @@ main {
   margin: 1rem 0;
 }
 .hero-img img {
+  visibility: hidden;
   position: absolute;
   top: 60px;
   object-fit: cover;
@@ -97,6 +98,7 @@ main {
 }
 
 .shape {
+  visibility: hidden;
   z-index: 1;
   width: 32rem;
   height: 32rem;
@@ -107,17 +109,19 @@ main {
 
 /* Save book */
 section {
-  margin: 1rem 6rem;
+  margin: 1rem 1rem;
 }
 
 #saveBook {
   color: #4992f2;
 }
 
-#saveBook h2 {
+#saveBook h2,
+#searchSection h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   margin: 4rem 0;
+  color: #4992f2;
 }
 
 #inputBook {
@@ -169,3 +173,117 @@ section {
 }
 
 /* Search section */
+
+#searchSection {
+  margin-top: 20rem;
+}
+
+#searchBook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+#searchBook input {
+  padding: 10px;
+  width: 50%;
+  color: #4992f2;
+  background-color: #021e37;
+  border: 1px solid #4992f2;
+  border-radius: 10px;
+}
+
+#searchBook button {
+  padding: 0.5rem;
+  width: 5vw;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #5e66f2;
+}
+
+#shelf {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+}
+
+.shelf {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+
+.shelf h2 {
+  text-align: center;
+  color: #4992f2;
+}
+
+.book_item {
+  border: 1px solid #4992f2;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+.book_item h3 {
+  font-size: 22px;
+}
+
+.book_item p {
+  font-size: 14px;
+}
+
+.action button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid;
+  width: 5rem;
+  margin-right: 5px;
+  background-color: #021e37;
+}
+
+.done {
+  color: #278257;
+  border-color: #278257;
+}
+
+.delete {
+  color: #ac3434;
+  border-color: #ac3434;
+}
+
+.done:hover {
+  color: white;
+  border-color: transparent;
+  background-color: #278257;
+}
+
+.delete:hover {
+  color: white;
+  border-color: transparent;
+  background-color: #ac3434;
+}
+
+@media (min-width: 992px) {
+  .hero-img img,
+  .shape {
+    visibility: visible;
+  }
+  section {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  #shelf {
+    flex-direction: row;
+  }
+}
