@@ -15,7 +15,7 @@ function submitBook() {
     id: String(date.getDate()) + String(date.getFullYear()) + String(date.getHours()) + String(date.getMilliseconds()),
     title: judul,
     author: penulis,
-    year: tahun,
+    year: parseInt(tahun),
     isComplete: selesai ? true : false,
   };
   putBook(bookData);
