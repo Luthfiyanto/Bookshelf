@@ -43,7 +43,7 @@
       <!-- Section input buku -->
       <section id="saveBook">
         <h2>Simpan Buku</h2>
-        <form action="" id="inputBook">
+        <form id="inputBook">
           <div class="input">
             <label for="inputBookTitle">Judul</label>
             <input type="text" id="inputBookTitle" required />
@@ -58,7 +58,7 @@
           </div>
           <div class="input_inline">
             <label for="inputBookIsComplete">Selesai Dibaca</label>
-            <input type="checkbox" id="inputBookIsComplete" required />
+            <input type="checkbox" id="inputBookIsComplete" />
           </div>
           <button type="submit" id="bookSubmit">Masukkan Buku ke Rak</button>
         </form>
@@ -79,7 +79,7 @@
 
           <div id="incompleteBookshelfList" class="book_list">
             <!-- Display book -->
-            <div class="book_item">
+            <!-- <div class="book_item">
               <h3>Book Title</h3>
               <p>Penulis Lorem</p>
               <p>Tahun 2023</p>
@@ -88,20 +88,7 @@
                 <button class="done">Done</button>
                 <button class="delete">Delete</button>
               </div>
-            </div>
-          </div>
-          <div id="incompleteBookshelfList" class="book_list">
-            <!-- Display book -->
-            <div class="book_item">
-              <h3>Book Title</h3>
-              <p>Penulis Lorem</p>
-              <p>Tahun 2023</p>
-
-              <div class="action">
-                <button class="done">Done</button>
-                <button class="delete">Delete</button>
-              </div>
-            </div>
+            </div> -->
           </div>
         </article>
 
@@ -110,7 +97,7 @@
 
           <div id="completeBookshelfList" class="book_list">
             <!-- Display book -->
-            <div class="book_item">
+            <!-- <div class="book_item">
               <h3>Book Title</h3>
               <p>Penulis Lorem</p>
               <p>Tahun 2023</p>
@@ -119,7 +106,7 @@
                 <button class="done">Done</button>
                 <button class="delete">Delete</button>
               </div>
-            </div>
+            </div> -->
           </div>
         </article>
       </section>
@@ -165,5 +152,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="script/app.js"></script>
+    <script src="script/storage.js"></script>
   </body>
 </html>

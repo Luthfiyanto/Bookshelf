@@ -224,6 +224,7 @@ section {
   display: grid;
   grid-template-columns: auto;
   gap: 10px;
+  margin: 20px 0;
 }
 
 .book_item h3 {
