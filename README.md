@@ -15,5 +15,5 @@ Website ini mampu menjalankan fungsi sebagaimana rak buku
 git clone https://github.com/Luthfiyanto/Bookshelf.git
 ```
 
-2. _Run the project_
+2. _Run the project_ <br>
    Jalankan aplikasi ini dengan menggunakan live server
