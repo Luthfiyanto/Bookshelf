@@ -7,4 +7,13 @@ Website ini mampu menjalankan fungsi sebagaimana rak buku
 - Menghapus buku
 - Mencari judul buku
 
-Cukup download semua file atau clone repo dan jalankan file index.html
+## How to run project
+
+1. _Clone this repository or download it_
+
+```bash
+git clone https://github.com/Luthfiyanto/Bookshelf.git
+```
+
+2. _Run the project_
+   Jalankan aplikasi ini dengan menggunakan live server
